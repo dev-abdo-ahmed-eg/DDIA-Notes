@@ -1,37 +1,58 @@
-# Chapter One
+# Chapter 1 — Trade-Offs in Data Systems Architecture
 
 ## Topics
 
-- Operational versus Analytical Systems
-- Cloud versus Self-Hosting Systems
-- Distributed versus Single Node Systems
+* Operational vs Analytical Systems
+* Cloud vs Self-Hosting
+* Distributed vs Single-Node Systems
 
 ---
 
 ## Application Types
 
-An application is:
-
 ### Data-Intensive
 
-If data management is the primary challenge in developing the application.
+Data management is the primary challenge.
 
 ### Compute-Intensive
 
-If the challenge is parallelizing a very large computation.
+Computation is the primary challenge.
 
 ---
 
 ## Operational Systems
 
-Backend services that serve end users.
+* Serve end-user requests.
+* Read/write operational data.
+* Optimize for low-latency transactions.
 
-They read or modify the database based on user actions.
+### Examples
+
+* E-commerce
+* Banking
+* User Management
 
 ---
 
 ## Analytical Systems
 
-Serve the needs of business analysts.
+* Serve business analysis workloads.
+* Operate on a copy of operational data.
+* Optimize for complex queries and aggregations.
 
-Contain a read-only copy of operational data.
+### Examples
+
+* Reporting
+* Dashboards
+* Business Intelligence
+
+---
+
+## Key Distinction
+
+| Operational             | Analytical           |
+| ----------------------- | -------------------- |
+| User-facing             | Business-facing      |
+| Transactional workloads | Analytical workloads |
+| Frequent reads/writes   | Mostly read-only     |
+| Low latency             | Large-scale queries  |
