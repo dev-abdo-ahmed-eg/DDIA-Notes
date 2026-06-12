@@ -43,3 +43,11 @@ These notes reflect my personal understanding of the material and are intended t
 ## Status
 
 🚧 Work in progress — currently covering Chapters 1–6.
+
+
+## How These Notes Are Created [important]
+
+I take handwritten notes while reading the book and later use ChatGPT to convert them into structured Markdown documents.
+
+ChatGPT helps with formatting, organization, and identifying gaps or improvements, while the content itself is based on my personal study notes and understanding of the material.
+
