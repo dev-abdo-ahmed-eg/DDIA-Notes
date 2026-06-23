@@ -98,6 +98,8 @@ Computation is the primary challenge.
 
 *   **"More nodes always means more speed":** In distributed systems, more nodes increase communication overhead and the probability of a "straggler" slowing down the entire request.
 
+---
+
 # Discussion Points
 
 *   **Why split Operational (OLTP) and Analytical (OLAP) systems?**
@@ -106,7 +108,21 @@ Computation is the primary challenge.
 *   The challenge of modern systems is no longer just writing code, but the **integration** of multiple specialized tools (like a DB, a cache, and a search index) into a single reliable dataflow,.
 *   **Data Outlives Code:** While application logic might be updated daily, the data in your database can persist for years, meaning schema evolution and compatibility are more critical than code versioning.
 
-# What I Must Remember After Reading This Chapter
+# To Remember
 
 *   **Integration is the primary challenge:** Focus on how data flows between different specialized systems,.
 *   **Abstractions hide complexity but have limits:** Tools like SQL or Cloud APIs simplify your life, but you must understand their underlying trade-offs to debug them effectively,.
+
+---
+
+### Personal Observation
+
+* Before reading this chapter, I assumed that "Distributed System" was almost the same thing as "Microservices".
+* What I realized is that distribution is a broader concept.
+
+Even a traditional monolithic application can be part of a distributed system if it communicates with external components running on different machines, such as a database server, Redis, Kafka, or S3. The key idea is not the number of services, but the fact that the system as a whole spans multiple nodes that communicate over a network.
+
+A good sanity check: if my application depends on another machine to function, I am already dealing with distributed systems concerns (network failures, latency, consistency, etc.).
+
+If both the application and the database run on the same machine, then the system is typically not considered distributed because everything resides on a single node.
+
