@@ -1,4 +1,58 @@
-# CHAPTER 2 - Defining Nonfunctional Requirements
+# Chapter 2 - Defining Non-Functional Requirements
+
+## What Are Non-Functional Requirements?
+
+Non-functional requirements describe how a system should behave rather than what it should do.
+
+Examples:
+
+- Fast
+- Reliable
+- Secure
+- Maintainable
+
+A reliable service continues to work even when some parts of the system fail.
+
+---
+
+## Throughput
+
+Throughput is the number of requests a system can process per second.
+
+It is usually measured in:
+
+- Requests per second (RPS)
+
+Higher throughput means the system can handle more work in the same amount of time.
+
+---
+
+## Scalability
+
+A system is considered scalable if its maximum throughput can be significantly increased by adding more computing resources.
+
+Examples of computing resources:
+
+- More CPU cores
+- More memory
+- More servers
+
+The goal of scalability is to handle increasing load without a major drop in performance.
+
+---
+
+## Sources of Delays in a System
+
+Many factors can add random delays to a request:
+
+- Context switching to background processes
+- Loss of network packets and TCP retransmissions
+- Garbage collection pauses
+- Page faults when reading data from disk
+- Mechanical vibrations in storage hardware
+
+Because of these factors, response times are not always consistent.
+
 ---
 
 # Key Ideas
