@@ -25,7 +25,9 @@
 . While users care about response time, architects use throughput to determine hardware requirements and costs
 
 * Latency: Often used interchangeably with response time, but specifically refers to the time a request is latent (waiting) and not being actively processed, such as during network transit
-.
+
+[alt text](<Screenshot 2026-06-23 211050.png>)
+
 ---
 
 # Architecture & Design Trade-offs
@@ -65,9 +67,6 @@
 *   **Plan for 10x, not 100x:** Build an architecture that can handle an order of magnitude more load, but don't over-engineer for 100x growth, as you will likely need to rethink the architecture entirely by that point anyway.
 *   **Simplicity is a Maintainability Goal:** A "big ball of mud" system with hidden assumptions and tight coupling is a liability that grows more expensive every year.
 *   **Distribution is a Choice, Not a Default:** If a single-machine database can handle your load, it is almost always simpler and cheaper than a distributed setup.!
-
-
-[alt text](<Screenshot 2026-06-23 211050.png>)
 
 ---
 
