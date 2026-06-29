@@ -80,7 +80,7 @@ Because of these factors, response times are not always consistent.
 
 * Latency: Often used interchangeably with response time, but specifically refers to the time a request is latent (waiting) and not being actively processed, such as during network transit
 
-[alt text](<Screenshot 2026-06-23 211050.png>)
+![Architecture](<Screenshot 2026-06-23 211050.png>)
 
 ---
 
