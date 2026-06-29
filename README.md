@@ -8,8 +8,6 @@ My personal study notes and chapter summaries while reading *Designing Data-Inte
 * Chapter 2 — Defining Nonfunctional Requirements
 * Chapter 3 — Data Models and Query Languages
 * Chapter 4 — Storage and Retrieval
-* Chapter 5 — Encoding and Evolution
-* Chapter 6 — Replication
 
 ## Repository Structure
 
@@ -19,8 +17,6 @@ notes/
 ├── 02-defining-nonfunctional-requirements.md
 ├── 03-data-models-and-query-languages.md
 ├── 04-storage-and-retrieval.md
-├── 05-encoding-and-evolution.md
-└── 06-replication.md
 ```
 
 ## What These Notes Contain
@@ -30,7 +26,6 @@ notes/
 * Architecture insights
 * Real-world examples
 * Personal observations
-* Interview-focused takeaways
 
 ## Purpose
 
@@ -42,12 +37,12 @@ These notes reflect my personal understanding of the material and are intended t
 
 ## Status
 
-🚧 Work in progress — currently covering Chapters 1–6.
+🚧 Work in progress — currently covering Chapters 1–4.
 
 
 ## How These Notes Are Created [important]
 
-I take handwritten notes while reading the book and later use ChatGPT to convert them into structured Markdown documents.
+I take handwritten most of the notes while reading the book / or highlight them at the PDF and later use ChatGPT to convert them into structured Markdown documents.
 
 ChatGPT helps with formatting, organization, and identifying gaps or improvements, while the content itself is based on my personal study notes and understanding of the material.
 
